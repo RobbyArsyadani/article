@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register
+{% endblock %}
+{% block content %}
+    <form action="#" method="POST"> 
+        <div class="mb-3">
+          <label for="exampleInputusername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name = "username">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputusername1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name = "name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name = "password"  pattern="(?=.[a-z])(?=.*[A-Z]).{5,}" title="Minimum 5 Characters and Minimum 1 Uppercase" required>
+        </div>
+        <button type="submit" class="btn btn-primary" value = "Register">Submit</button>
+      </form>
+{% endblock %}

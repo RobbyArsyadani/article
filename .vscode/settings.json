@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "MySQL",
+            "name": "conn1",
+            "username": "flask",
+            "password": "flask",
+            "database": "db_blog_complete"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "MySQL",
+            "name": "init.sql",
+            "database": "db_blog_complete",
+            "username": "flask",
+            "password": "flask"
+        }
+    ]
+}
